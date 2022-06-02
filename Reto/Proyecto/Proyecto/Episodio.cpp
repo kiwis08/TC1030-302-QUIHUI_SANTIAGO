@@ -7,41 +7,40 @@
 
 #include "Episodio.hpp"
 
-Episodio :: Episodio () {
+Episodio::Episodio () {
     title = "Pilot";
     temporada = 1;
     calificacion = 100;
 }
 
-Episodio :: Episodio (string _title, int _temporada, int _calificacion) {
+Episodio::Episodio (string _title, int _temporada, int _calificacion) {
     title = _title;
     temporada = _temporada;
     calificacion = _calificacion ;
-
 }
 
-void Episodio :: setTitle (string _title) {
+void Episodio::setTitle (string _title) {
     title = _title;
 }
-void Episodio :: setTemporada (int _temporada) {
+void Episodio::setTemporada (int _temporada) {
     temporada = _temporada;
 }
-void Episodio :: setCalificacion(int _calificacion) {
+void Episodio::setCalificacion(int _calificacion) {
     calificacion = _calificacion;
 }
 
-string Episodio :: getTitle () {
+string Episodio::getTitle () {
     return title;
 }
-int Episodio :: getTemporada() {
+int Episodio::getTemporada() {
     return temporada;
 }
 
-int Episodio :: getCalificacion() {
+int Episodio::getCalificacion() {
     return calificacion;
 }
 
-string Episodio :: str () {
+string Episodio::str() {
     return title + "," + to_string(temporada) + "," + to_string(calificacion);
 }
 

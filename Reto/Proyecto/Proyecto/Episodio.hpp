@@ -16,10 +16,12 @@ public:
     // Constructores
     Episodio ();
     Episodio (string _title, int _temporada, int _calificacion);
+    
     // Setters
     void setTitle(string _title);
     void setTemporada (int _temporada);
     void setCalificacion(int _calificacion);
+    
     // Getters
     string getTitle ();
     int getTemporada();
@@ -27,6 +29,7 @@ public:
 
     //Str
     string str();
+    
 private:
     string title;
     int temporada, calificacion;
