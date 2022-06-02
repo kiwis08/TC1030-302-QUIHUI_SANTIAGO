@@ -10,6 +10,7 @@
 #include "Video.hpp"
 #include "Pelicula.hpp"
 #include "Serie.hpp"
+#include "Peliculas.hpp"
 
 int main(int argc, const char * argv[]) {
     // Declaracion de un video Default:
@@ -52,6 +53,9 @@ int main(int argc, const char * argv[]) {
     s2.setEpisodio(1,ep2);
     
     cout <<  s2.str() << endl;
+    
+    cout << "---- PELICULAS2 -----" << endl;
+    peliculas.leerArchivo();
     
     return 0;
     
