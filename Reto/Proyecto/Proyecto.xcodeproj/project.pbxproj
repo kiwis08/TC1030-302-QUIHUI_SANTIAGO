@@ -12,6 +12,7 @@
 		BE23FB0B284960610036DC6F /* Pelicula.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE23FB09284960610036DC6F /* Pelicula.cpp */; };
 		BE23FB0E284961050036DC6F /* Episodio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE23FB0C284961050036DC6F /* Episodio.cpp */; };
 		BE23FB11284961F80036DC6F /* Serie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE23FB0F284961F80036DC6F /* Serie.cpp */; };
+		BE23FB1528496B100036DC6F /* Peliculas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE23FB1328496B100036DC6F /* Peliculas.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,8 @@
 		BE23FB0F284961F80036DC6F /* Serie.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Serie.cpp; sourceTree = "<group>"; };
 		BE23FB10284961F80036DC6F /* Serie.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Serie.hpp; sourceTree = "<group>"; };
 		BE23FB1228496AFE0036DC6F /* Pelicula.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pelicula.csv; sourceTree = "<group>"; };
+		BE23FB1328496B100036DC6F /* Peliculas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Peliculas.cpp; sourceTree = "<group>"; };
+		BE23FB1428496B100036DC6F /* Peliculas.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Peliculas.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				BE23FAFB28495E370036DC6F /* main.cpp */,
+				BE23FB1328496B100036DC6F /* Peliculas.cpp */,
+				BE23FB1428496B100036DC6F /* Peliculas.hpp */,
 				BE23FB0328495F3B0036DC6F /* Video.hpp */,
 				BE23FB09284960610036DC6F /* Pelicula.cpp */,
 				BE23FB0C284961050036DC6F /* Episodio.cpp */,
@@ -145,6 +150,7 @@
 				BE23FB0E284961050036DC6F /* Episodio.cpp in Sources */,
 				BE23FB11284961F80036DC6F /* Serie.cpp in Sources */,
 				BE23FAFC28495E370036DC6F /* main.cpp in Sources */,
+				BE23FB1528496B100036DC6F /* Peliculas.cpp in Sources */,
 				BE23FB0528495F490036DC6F /* Video.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
