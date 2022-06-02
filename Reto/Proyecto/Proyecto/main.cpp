@@ -30,6 +30,8 @@ int main(int argc, const char * argv[]) {
     // Creacion de episodio con parametros:
     Episodio ep2("The Bicycle Thief",1, 9.7);
     
+    Peliculas coleccionPelis;
+    
     cout << "---- VIDEOS -----" << endl;
     cout << v1.str() << endl;
     cout << v2.str() << endl;
@@ -55,7 +57,7 @@ int main(int argc, const char * argv[]) {
     cout <<  s2.str() << endl;
     
     cout << "---- PELICULAS2 -----" << endl;
-    peliculas.leerArchivo();
+    coleccionPelis.leerArchivo();
     
     return 0;
     
