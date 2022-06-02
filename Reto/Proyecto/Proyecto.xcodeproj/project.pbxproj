@@ -11,6 +11,7 @@
 		BE23FB0528495F490036DC6F /* Video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE23FB0428495F490036DC6F /* Video.cpp */; };
 		BE23FB0B284960610036DC6F /* Pelicula.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE23FB09284960610036DC6F /* Pelicula.cpp */; };
 		BE23FB0E284961050036DC6F /* Episodio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE23FB0C284961050036DC6F /* Episodio.cpp */; };
+		BE23FB11284961F80036DC6F /* Serie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE23FB0F284961F80036DC6F /* Serie.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		BE23FB0A284960610036DC6F /* Pelicula.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Pelicula.hpp; sourceTree = "<group>"; };
 		BE23FB0C284961050036DC6F /* Episodio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Episodio.cpp; sourceTree = "<group>"; };
 		BE23FB0D284961050036DC6F /* Episodio.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Episodio.hpp; sourceTree = "<group>"; };
+		BE23FB0F284961F80036DC6F /* Serie.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Serie.cpp; sourceTree = "<group>"; };
+		BE23FB10284961F80036DC6F /* Serie.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Serie.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 				BE23FB09284960610036DC6F /* Pelicula.cpp */,
 				BE23FB0C284961050036DC6F /* Episodio.cpp */,
 				BE23FB0D284961050036DC6F /* Episodio.hpp */,
+				BE23FB0F284961F80036DC6F /* Serie.cpp */,
+				BE23FB10284961F80036DC6F /* Serie.hpp */,
 				BE23FB0A284960610036DC6F /* Pelicula.hpp */,
 				BE23FB0428495F490036DC6F /* Video.cpp */,
 			);
@@ -136,6 +141,7 @@
 			files = (
 				BE23FB0B284960610036DC6F /* Pelicula.cpp in Sources */,
 				BE23FB0E284961050036DC6F /* Episodio.cpp in Sources */,
+				BE23FB11284961F80036DC6F /* Serie.cpp in Sources */,
 				BE23FAFC28495E370036DC6F /* main.cpp in Sources */,
 				BE23FB0528495F490036DC6F /* Video.cpp in Sources */,
 			);
