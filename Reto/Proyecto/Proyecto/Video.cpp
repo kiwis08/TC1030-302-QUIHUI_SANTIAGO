@@ -1,7 +1,7 @@
 #include "Video.hpp"
 
 Video::Video() {
-    id = "000";
+    iD = "000";
     titulo = "Mi Video";
     duracion = 10;
     genero = "Comedia";
@@ -9,15 +9,15 @@ Video::Video() {
 }
 
 Video::Video(string _id, string _titulo, int _duracion, string _genero, double _calificacionPromedio) {
-    id = _id;
+    iD = _id;
     titulo = _titulo;
     duracion = _duracion;
     genero = _genero;
     calificacionPromedio = _calificacionPromedio;
 }
 
-void Video::setId(string _id) {
-    id = _id;
+void Video::setId(string _iD) {
+    iD = _iD;
 }
 
 void Video::setTitulo(string _titulo) {
@@ -37,7 +37,7 @@ void Video::setCalificacion(double _calificacionPromedio) {
 }
 
 string Video::getId() {
-    return id;
+    return iD;
 }
 
 string Video::getTitulo() {
@@ -57,5 +57,5 @@ double Video::getCalificacion() {
 }
 
 string Video::str() {
-    return id + "," + titulo + "," + to_string(duracion) + "," + genero + "," + to_string(calificacionPromedio);
+    return iD + "," + titulo + "," + to_string(duracion) + "," + genero + "," + to_string(calificacionPromedio);
 }
