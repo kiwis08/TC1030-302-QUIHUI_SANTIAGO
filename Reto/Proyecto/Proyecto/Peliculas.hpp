@@ -19,7 +19,7 @@ public:
     Peliculas();
     
     // Setters
-    void setPtrPeliculas(Pelicula *_pelicula);
+    void setPtrPelicula(Pelicula *_pelicula);
     void setCantidadPeliculas(int _cantidad);
     
     // Getters

@@ -15,7 +15,7 @@ Peliculas::Peliculas() {
     cantidad = 0;
 }
 
-void Peliculas::setPtrPeliculas(Pelicula *_pelicula) {
+void Peliculas::setPtrPelicula(Pelicula *_pelicula) {
     arrPtrPeliculas[cantidad++] = _pelicula;
 }
 void Peliculas::setCantidadPeliculas(int _cantidad) {
