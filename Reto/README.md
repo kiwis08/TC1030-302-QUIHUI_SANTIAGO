@@ -1,10 +1,10 @@
 # Situación Problema
 
-## Santiago Quihui Rubio
-## A00832880
+### Santiago Quihui Rubio
+### A00832880
 
 
 # Diagrama UML
-Falta corregir método get de título en Video
 
-![uml Entrega1](https://user-images.githubusercontent.com/39177932/169869371-f52a8f03-4096-47f6-9949-032e8fadfaef.png)
+![Avance2](https://user-images.githubusercontent.com/39177932/172030796-a533e7eb-47e2-4ad7-ba9e-35d4c2f860f3.png)
+
