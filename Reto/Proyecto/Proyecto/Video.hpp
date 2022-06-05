@@ -10,10 +10,10 @@ class Video {
 public:
     // Constructores
     Video();
-    Video(string _id, string _titulo, int _duracion, string _genero, double _calificacion);
+    Video(string _iD, string _titulo, int _duracion, string _genero, double _calificacion);
 
     // Setters
-    void setId(string _id);
+    void setId(string _iD);
     void setTitulo(string _titulo);
     void setDuracion(int _duracion);
     void setGenero(string _genero);
@@ -30,7 +30,7 @@ public:
     string str();
 
 protected:
-    string id;
+    string iD;
     string titulo;
     int duracion;
     string genero;
