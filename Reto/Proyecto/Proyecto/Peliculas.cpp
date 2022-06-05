@@ -65,7 +65,7 @@ void Peliculas::reporteTodasLasPeliculas() {
 }
 void Peliculas::reporteConCalificacion(double _calificacionPromedio) {
     for (int index = 0; index < cantidad; index++) {
-        if (arrPtrPeliculas[index]->getCalificacion() >= _calificacionPromedio) {
+        if (arrPtrPeliculas[index]->getCalificacion() == _calificacionPromedio) {
             cout << arrPtrPeliculas[index]->str() << endl;
         }
     }
