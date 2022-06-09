@@ -15,7 +15,7 @@ public:
     // Constructores
     Pelicula();
     Pelicula(string _id, string _titulo, int _duracion, string _genero, double _calificacion, int _oscares);
-    
+    ~Pelicula();
     // Setters
     void setOscares(int _oscares);
     
@@ -24,7 +24,8 @@ public:
     
     // Otros métodos
     string str();
-
+    
+    friend ostream& operator<<(ostream &out, const Pelicula &peli);
 private:
     int oscares;
 };
