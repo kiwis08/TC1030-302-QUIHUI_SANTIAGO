@@ -20,18 +20,20 @@ class Serie: public Video {
 public:
     // Constructores
     Serie ();
-    Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio);
+    Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio, int _cantidad);
+    
+    ~Serie();
     
     // Setters
     void setEpisodio(int _index, Episodio _episodio);
-    void setCantidad (int _cantidad);
+    void setCantidad(int _cantidad);
     
     // Getters
-    Episodio getEpisodio (int _index);
-    int getCantidad ();
+    Episodio getEpisodio(int _index);
+    int getCantidad();
     
     // Otros Metodos
-    double calculaCalPromedio ();
+    double calculaCalPromedio();
     string str();
     
 private:
