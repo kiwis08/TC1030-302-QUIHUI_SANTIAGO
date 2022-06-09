@@ -40,7 +40,7 @@ int Episodio::getCalificacion() {
     return calificacion;
 }
 
-string Episodio::str() {
+string Episodio::str() const {
     return title + "," + to_string(temporada) + "," + to_string(calificacion);
 }
 

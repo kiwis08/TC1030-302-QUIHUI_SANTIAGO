@@ -36,6 +36,7 @@ public:
     double calculaCalPromedio();
     string str();
     
+    friend ostream& operator<<(ostream &out, const Serie &serie);
 private:
     Episodio episodios[5];
     int cantidad;
