@@ -41,6 +41,8 @@
 		BE23FB1228496AFE0036DC6F /* Pelicula.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pelicula.csv; sourceTree = "<group>"; };
 		BE23FB1328496B100036DC6F /* Peliculas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Peliculas.cpp; sourceTree = "<group>"; };
 		BE23FB1428496B100036DC6F /* Peliculas.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Peliculas.hpp; sourceTree = "<group>"; };
+		BE260BB92851BA320088CC59 /* Episodio2021.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Episodio2021.csv; sourceTree = "<group>"; };
+		BE260BBA2851BA320088CC59 /* Serie2021.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Serie2021.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,8 @@
 				BE23FB0428495F490036DC6F /* Video.cpp */,
 				BE23FB1228496AFE0036DC6F /* Pelicula.csv */,
 				BE1B799C284C31B000BFA833 /* main.cpp */,
+				BE260BB92851BA320088CC59 /* Episodio2021.csv */,
+				BE260BBA2851BA320088CC59 /* Serie2021.csv */,
 			);
 			path = Proyecto;
 			sourceTree = "<group>";
