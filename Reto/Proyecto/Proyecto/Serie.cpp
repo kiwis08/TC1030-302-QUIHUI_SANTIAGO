@@ -17,7 +17,7 @@ Serie::Serie(string _iD, string _titulo, int _duracion, string _genero, double _
 
 
 void Serie::setEpisodio(int _index, Episodio _episodio) {
-    if ((_index >= 0) and (_index < cantidad)) {
+    if (_index >= 0) {
         episodios[_index] = _episodio;
     }
 }
