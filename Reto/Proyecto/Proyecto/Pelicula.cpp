@@ -26,3 +26,8 @@ int Pelicula::getOscares() {
 string Pelicula::str() {
     return Video::str() + ',' + to_string(oscares);
 }
+
+ostream& operator<<(ostream &out, const Pelicula &peli) {
+    out << peli.iD << ',' << peli.titulo << ',' << peli.duracion << ',' << peli.genero << ',' << peli.calificacionPromedio << ',' << peli.oscares << endl;
+    return out;
+}

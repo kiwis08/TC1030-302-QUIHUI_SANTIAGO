@@ -59,14 +59,14 @@ void Peliculas::reporteTodasLasPeliculas() {
     double calPromedio = 0;
     for (int index = 0; index < cantidad; index++) {
         calPromedio += arrPtrPeliculas[index]->getCalificacion();
-        cout << arrPtrPeliculas[index]->str() << endl;
+        cout << index << ',' << *arrPtrPeliculas[index] << endl;
     }
     cout << "Calificacion promedio: " << calPromedio / cantidad << endl;
 }
 void Peliculas::reporteConCalificacion(double _calificacionPromedio) {
     for (int index = 0; index < cantidad; index++) {
         if (arrPtrPeliculas[index]->getCalificacion() == _calificacionPromedio) {
-            cout << arrPtrPeliculas[index]->str() << endl;
+            cout << index << ',' << *arrPtrPeliculas[index] << endl;
         }
     }
 }
@@ -74,7 +74,7 @@ void Peliculas::reporteConCalificacion(double _calificacionPromedio) {
 void Peliculas::reporteGenero(string _genero) {
     for (int index = 0; index < cantidad; index++) {
         if (arrPtrPeliculas[index]->getGenero() == _genero) {
-            cout << arrPtrPeliculas[index]->str() << endl;
+            cout << index << ',' << *arrPtrPeliculas[index] << endl;
         }
     }
 }
