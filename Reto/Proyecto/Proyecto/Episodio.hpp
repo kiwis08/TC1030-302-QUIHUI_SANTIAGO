@@ -28,7 +28,7 @@ public:
     int getCalificacion();
 
     //Str
-    string str();
+    string str() const;
     
 private:
     string title;
