@@ -11,13 +11,13 @@ Serie::Serie() : Video() {
     cantidad = 0;
 }
 
-Serie::Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio) : Video(_iD, _titulo, _duracion, _genero, _calificacionPromedio) {
-    cantidad = 0;
+Serie::Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio, int _cantidad) : Video(_iD, _titulo, _duracion, _genero, _calificacionPromedio) {
+    cantidad = _cantidad;
 }
 
 
 void Serie::setEpisodio(int _index, Episodio _episodio) {
-    if ((_index >= 0) and (_index < cantidad)) {
+    if (_index >= 0) {
         episodios[_index] = _episodio;
     }
 }
