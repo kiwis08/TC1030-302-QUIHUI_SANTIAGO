@@ -64,13 +64,9 @@ void Series::leerArchivo() {
             arrPtrSeries[iS]->setEpisodio(cantEpisodios, *episodio);
             arrPtrSeries[iS]->setCantidad(++cantEpisodios);
         }
-        cout << arrPtrSeries[iS]->str() << endl;
     }
     lectura.close();
     
-    for (int iS = 0; iS<cantidad; iS++) {
-        cout << arrPtrSeries[iS]->str() << endl;
-    }
     
 }
 
@@ -98,8 +94,27 @@ int Series::getCantidadSeries() {
 }
 
 void Series::reporteTodasLasSeries() {
-    
+    for (int iR = 0; iR < cantidad; iR++) {
+        cout << "*" << *arrPtrSeries[iR] << endl;
+    }
 }
-void Series::reporteConCalificacion(double _calificacion){ }
-void Series::reporteGenero(string _genero){ }
-void Series::calcularCalificacionSeries(){ }
+void Series::reporteConCalificacion(double _calificacion){
+    for (int iR = 0; iR < cantidad; iR++) {
+        if (arrPtrSeries[iR]->getCalificacion() == _calificacion) {
+            cout << "*" << *arrPtrSeries[iR] << endl;
+        }
+    }
+}
+void Series::reporteGenero(string _genero){
+    for (int iR = 0; iR < cantidad; iR++) {
+        if (arrPtrSeries[iR]->getGenero() == _genero) {
+            cout << "*" << *arrPtrSeries[iR] << endl;
+        }
+    }
+}
+void Series::calcularCalificacionSeries() {
+    for (int iR = 0; iR < cantidad; iR++) {
+        double calPromedio = arrPtrSeries[iR]->calculaCalPromedio();
+        arrPtrSeries[iR]->setCalificacion(calPromedio);
+    }
+}
