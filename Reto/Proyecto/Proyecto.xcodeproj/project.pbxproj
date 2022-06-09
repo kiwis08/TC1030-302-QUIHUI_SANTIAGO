@@ -13,6 +13,7 @@
 		BE23FB0E284961050036DC6F /* Episodio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE23FB0C284961050036DC6F /* Episodio.cpp */; };
 		BE23FB11284961F80036DC6F /* Serie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE23FB0F284961F80036DC6F /* Serie.cpp */; };
 		BE23FB1528496B100036DC6F /* Peliculas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE23FB1328496B100036DC6F /* Peliculas.cpp */; };
+		BE260BB2285199BB0088CC59 /* Series.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE260BB0285199BB0088CC59 /* Series.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,8 @@
 		BE23FB1228496AFE0036DC6F /* Pelicula.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pelicula.csv; sourceTree = "<group>"; };
 		BE23FB1328496B100036DC6F /* Peliculas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Peliculas.cpp; sourceTree = "<group>"; };
 		BE23FB1428496B100036DC6F /* Peliculas.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Peliculas.hpp; sourceTree = "<group>"; };
+		BE260BB0285199BB0088CC59 /* Series.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Series.cpp; sourceTree = "<group>"; };
+		BE260BB1285199BB0088CC59 /* Series.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Series.hpp; sourceTree = "<group>"; };
 		BE260BB92851BA320088CC59 /* Episodio2021.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Episodio2021.csv; sourceTree = "<group>"; };
 		BE260BBA2851BA320088CC59 /* Serie2021.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Serie2021.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +78,8 @@
 		BE23FAFA28495E370036DC6F /* Proyecto */ = {
 			isa = PBXGroup;
 			children = (
+				BE260BB0285199BB0088CC59 /* Series.cpp */,
+				BE260BB1285199BB0088CC59 /* Series.hpp */,
 				BE23FB1328496B100036DC6F /* Peliculas.cpp */,
 				BE23FB1428496B100036DC6F /* Peliculas.hpp */,
 				BE23FB0328495F3B0036DC6F /* Video.hpp */,
@@ -156,6 +161,7 @@
 				BE23FB1528496B100036DC6F /* Peliculas.cpp in Sources */,
 				BE23FB0528495F490036DC6F /* Video.cpp in Sources */,
 				BE1B799D284C31B000BFA833 /* main.cpp in Sources */,
+				BE260BB2285199BB0088CC59 /* Series.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
