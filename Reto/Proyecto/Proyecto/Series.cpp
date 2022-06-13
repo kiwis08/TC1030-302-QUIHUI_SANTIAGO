@@ -40,7 +40,6 @@ void Series::leerArchivo() {
         }
         
         arrPtrSeries[cantidad] = new Serie(row[0], row[1], stoi(row[2]), row[3], stod(row[4]), 0);
-        arrPtrSeries[cantidad]->str(); //TODO: BORRAR
         cantidad++;
     }
     lectura.close();
@@ -71,9 +70,7 @@ void Series::leerArchivo() {
 }
 
 void Series::setPtrSerie(Serie* serie) {
-    cout << "Cantidad vieja: " << cantidad << endl;
     arrPtrSeries[cantidad++] = serie;
-    cout << "Cantidad nueva: " << cantidad << endl;
 }
 
 void Series::setCantidadSeries(int _cantidad) {
@@ -94,9 +91,12 @@ int Series::getCantidadSeries() {
 }
 
 void Series::reporteTodasLasSeries() {
+    double calPromedio = 0;
     for (int iR = 0; iR < cantidad; iR++) {
+        calPromedio += arrPtrSeries[iR]->getCalificacion();
         cout << "*" << *arrPtrSeries[iR] << endl;
     }
+    cout << "Promedio Series: " << calPromedio / cantidad << endl;
 }
 void Series::reporteConCalificacion(double _calificacion){
     for (int iR = 0; iR < cantidad; iR++) {

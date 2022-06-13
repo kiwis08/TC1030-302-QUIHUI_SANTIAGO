@@ -15,7 +15,7 @@ class Episodio {
 public:
     // Constructores
     Episodio ();
-    Episodio (string _title, int _temporada, int _calificacion);
+    Episodio (string _title, int _temporada, double _calificacion);
     
     // Setters
     void setTitle(string _title);
@@ -25,14 +25,15 @@ public:
     // Getters
     string getTitle ();
     int getTemporada();
-    int getCalificacion();
+    double getCalificacion();
 
     //Str
     string str() const;
     
 private:
     string title;
-    int temporada, calificacion;
+    int temporada;
+    double calificacion;
 };
 
 #endif // Episodio_hpp

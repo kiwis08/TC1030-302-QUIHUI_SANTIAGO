@@ -66,6 +66,6 @@ ostream& operator<<(ostream &out, const Serie &serie) {
     for (int index = 0; index < serie.cantidad; index++) {
         acum += " -> " + to_string(index) + '-' + serie.episodios[index].str() + '\n';
     }
-    out << serie.iD << ',' << serie.titulo << ',' << serie.duracion << ',' << serie.genero << ',' << serie.calificacionPromedio << ',' << acum;
+    out << serie.iD << ',' << serie.titulo << ',' << serie.duracion << ',' << serie.genero << ',' << serie.calificacionPromedio << ',' << to_string(serie.cantidad) << acum;
     return out;
 }
