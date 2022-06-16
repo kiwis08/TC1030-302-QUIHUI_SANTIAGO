@@ -22,9 +22,11 @@ Episodio::Episodio (string _title, int _temporada, double _calificacion) {
 void Episodio::setTitle (string _title) {
     title = _title;
 }
+
 void Episodio::setTemporada (int _temporada) {
     temporada = _temporada;
 }
+
 void Episodio::setCalificacion(int _calificacion) {
     calificacion = _calificacion;
 }

@@ -47,7 +47,6 @@ void Series::leerArchivo() {
     
     lectura.open("Episodio2021.csv", ios::in);
     while (getline(lectura, linea)) {
-        // cout << linea << endl; //TODO: BORRAR
         stringstream registro(linea);
         iRow = 0;
         
@@ -65,8 +64,6 @@ void Series::leerArchivo() {
         }
     }
     lectura.close();
-    
-    
 }
 
 void Series::setPtrSerie(Serie* serie) {
@@ -78,9 +75,9 @@ void Series::setCantidadSeries(int _cantidad) {
 }
 
 Serie* Series::getPtrSerie(string sId) {
-    for (int i = 0; i < cantidad; i++) {
-        if (arrPtrSeries[i]->getId() == sId) {
-            return arrPtrSeries[i];
+    for (int iR = 0; iR < cantidad; iR++) {
+        if (arrPtrSeries[iR]->getId() == sId) {
+            return arrPtrSeries[iR];
         }
     }
     return nullptr;
@@ -91,6 +88,9 @@ int Series::getCantidadSeries() {
 }
 
 void Series::reporteTodasLasSeries() {
+    if (cantidad <= 0) {
+        return;
+    }
     double calPromedio = 0;
     for (int iR = 0; iR < cantidad; iR++) {
         calPromedio += arrPtrSeries[iR]->getCalificacion();
@@ -98,23 +98,37 @@ void Series::reporteTodasLasSeries() {
     }
     cout << "Promedio Series: " << calPromedio / cantidad << endl;
 }
+
 void Series::reporteConCalificacion(double _calificacion){
+    int count = 0;
     for (int iR = 0; iR < cantidad; iR++) {
         if (arrPtrSeries[iR]->getCalificacion() == _calificacion) {
             cout << "*" << *arrPtrSeries[iR] << endl;
+            count++;
         }
     }
+    if (count == 0) {
+        cout << "No hay series con esa calificación" << endl;
+    }
 }
+
 void Series::reporteGenero(string _genero){
+    int count = 0;
     for (int iR = 0; iR < cantidad; iR++) {
         if (arrPtrSeries[iR]->getGenero() == _genero) {
             cout << "*" << *arrPtrSeries[iR] << endl;
+            count++;
         }
     }
+    if (count == 0) {
+        cout << "No hay series con esa calificación" << endl;
+    }
 }
+
 void Series::calcularCalificacionSeries() {
+    double calPromedio = 0;
     for (int iR = 0; iR < cantidad; iR++) {
-        double calPromedio = arrPtrSeries[iR]->calculaCalPromedio();
+        calPromedio = arrPtrSeries[iR]->calculaCalPromedio();
         arrPtrSeries[iR]->setCalificacion(calPromedio);
     }
 }

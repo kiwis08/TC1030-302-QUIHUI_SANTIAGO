@@ -18,6 +18,7 @@ Peliculas::Peliculas() {
 void Peliculas::setPtrPelicula(Pelicula *_pelicula) {
     arrPtrPeliculas[cantidad++] = _pelicula;
 }
+
 void Peliculas::setCantidadPeliculas(int _cantidad) {
     cantidad = _cantidad;
 }
@@ -30,6 +31,7 @@ Pelicula* Peliculas::getPtrPelicula(string sId) {
     }
     return nullptr;
 }
+
 int Peliculas::getCantidadPeliculas() {
     return cantidad;
 }
@@ -56,6 +58,9 @@ void Peliculas::leerArchivo() {
 }
 
 void Peliculas::reporteTodasLasPeliculas() {
+    if (cantidad <= 0) {
+        return;
+    }
     double calPromedio = 0;
     for (int index = 0; index < cantidad; index++) {
         calPromedio += arrPtrPeliculas[index]->getCalificacion();
@@ -63,18 +68,29 @@ void Peliculas::reporteTodasLasPeliculas() {
     }
     cout << "Calificacion promedio: " << calPromedio / cantidad << endl;
 }
+
 void Peliculas::reporteConCalificacion(double _calificacionPromedio) {
+    int count = 0;
     for (int index = 0; index < cantidad; index++) {
         if (arrPtrPeliculas[index]->getCalificacion() == _calificacionPromedio) {
             cout << index << ',' << *arrPtrPeliculas[index] << endl;
+            count++;
         }
+    }
+    if (count == 0) {
+        cout << "No hay películas con esa calificación" << endl;
     }
 }
 
 void Peliculas::reporteGenero(string _genero) {
+    int count = 0;
     for (int index = 0; index < cantidad; index++) {
         if (arrPtrPeliculas[index]->getGenero() == _genero) {
             cout << index << ',' << *arrPtrPeliculas[index] << endl;
+            count++;
         }
+    }
+    if (count == 0) {
+        cout << "No hay películas de este género" << endl;
     }
 }
